@@ -1,0 +1,33 @@
+<h1>products.handlebars</h1>
+{{#if isValid}}
+    <table>
+        <tr>
+            <th>Descripcion</th>
+            <th>Precio</th>
+            <th>Id</th>
+        </tr>
+        {{#each docs}}
+        <tr>
+            <td>{{this.description}}</td>
+            <td>${{this.price}}</td>
+            <td>@{{this.id}}@</td>
+            <td><button class="btn btn-danger" data-product-id="{{this.id}}" value="{{this.id}}">Eliminar</button></td>
+            <td><a href="/api/products/productsUpd/{{this.id}}" class="btn btn-primary"  role="button" data-product-id="{{this.id}}"  id="update" value="{{this.id}}">Actualizar Producto</a></td>
+        </tr>
+        {{/each}}
+        <br/>
+        <a href="/api/products/productsNew/" class="btn btn-secondary" role="button" id="productsNew">Nuevo Producto</a>
+    </table>
+    <br/>
+    <div>
+        {{#if this.hasPrevPage}}
+            <a href={{this.prevLink}}><< Anterior</a>
+        {{/if}}
+        {{page}}
+        {{#if this.hasNextPage}}
+            <a href={{this.nextLink}}>Siguiente >></a>
+        {{/if}} 
+    </div>
+{{else}}
+    <h1>No hay productos para mostrar</h1>
+{{/if}}

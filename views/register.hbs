@@ -1,0 +1,33 @@
+<h1>Registrarse</h1>
+<form id="registerFormUpd" action="/api/sessions/register"  method="post">
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr class="border-0">
+                <td><label for="first_name">First name:</label></td>
+                <td><input type="text" id="first_name" name="first_name" > </td>
+            </tr>
+            <tr class="border-0">
+                <td><label for="last_name">Last name:</label></td>
+                <td><input type="text" id="last_name" name="last_name"></td>
+            </tr>
+            <tr class="border-0">
+                <td><label for="age" class="col-sm-2 col-form-label">Age:</label></td>
+                <td><input type="number"  id="age" name="age" ></td>
+            </tr>
+            <tr class="border-0">
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" id="email" name="email" ></td>
+            </tr>
+            <tr class="border-0">
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password" ></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="btn btn-success" id="registrarse" value="Registrarse">Registrarse</button>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/src/public/js/index.js"></script>

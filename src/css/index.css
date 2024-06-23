@@ -1,0 +1,146 @@
+/* Variables */
+/* reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  @font-face {
+    font-family: "BlueSignature";
+    src: url("../fonts/BlueSignature.otf");
+  }
+  /* Selector universal */
+  .centrar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+  
+  .centrar.principal {
+    font-family: "BlueSignature";
+  }
+  
+  .button {
+    border: none;
+    color: colorNegro;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+  
+  .button.verde {
+    background-color: rgb(84, 175, 76);
+  }
+  
+  .button.rojo {
+    background-color: rgb(175, 116, 76);
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #tabla {
+    border: 1px solid rgb(0, 0, 255);
+    border-collapse: collapse;
+    width: 50%;
+  }
+  #tabla tr {
+    text-align: left;
+    width: 100%;
+    font-size: 25px;
+  }
+  
+  .dimension, .dimensionIndex, .dimensionSucursal, .dimensionComunicacion, .dimensionFooter, .dimensionHistoria, .dimensionDelicias, .dimensionSabores {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .box1 {
+    display: inline-block;
+    background-color: rgb(203, 219, 248);
+    width: 350px;
+    height: 350px;
+    border-width: 1px;
+    padding-left: 10px;
+    padding: 10px 30px;
+    overflow: scroll;
+    box-sizing: border-box;
+    margin: 10px 20px;
+  }
+  
+  .dimensionHistoria {
+    display: inline-block;
+    background-color: rgb(203, 219, 248);
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+    margin: 10px 20px;
+  }
+  
+  .dimensionFooter {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .dimensionComunicacion {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .dimensionSucursal, .dimensionIndex {
+    width: 600px;
+    height: 450px;
+    border-style: none;
+  }
+  
+  .degrade {
+    background-color: rgb(186, 206, 3);
+    list-style: none;
+    background-image: linear-gradient(rgb(186, 206, 3), rgb(255, 255, 0));
+  }
+  
+  .linkpagina {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  h1 {
+    color: rgb(128, 0, 0);
+    font-weight: bold;
+    font-size: 100px;
+  }
+  
+  h2 {
+    color: rgb(128, 0, 0);
+    font-weight: bold;
+    font-size: 80px;
+  }
+  
+  h3 {
+    color: rgba(0, 119, 128, 0.993);
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 80px;
+    }
+  }
+  @media (max-width: 576px) {
+    h2 {
+      font-size: 30px;
+    }
+  } 

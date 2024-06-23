@@ -1,0 +1,24 @@
+<div>
+  <h1>Productos</h1>
+  <ul id="product-list-github">
+        <table>
+            <tr>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Id</th>
+            </tr>
+            {{#each products}}
+            <tr>
+                <td>{{description}}</td>
+                <td>${{price}}</td>
+                <td>@{{id}}@</td>
+                <td><button class="btn btn-danger" data-product-id="{{id}}" value="{{id}}">Eliminar</button></td>
+                <td><a href="/productsUpd" class="btn btn-primary" onclick="f(this.value)" role="button" data-product-id="{{id}}"  id="update" value="{{id}}">Actualizar Producto</a></td>
+            </tr>
+            {{/each}}
+        </table>
+  </ul>
+  <a href="/productsNew" class="btn btn-success" role="button" aria-pressed="true">Agregar Producto</a>
+</div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
